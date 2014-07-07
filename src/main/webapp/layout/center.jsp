@@ -113,7 +113,7 @@
 		<div style="margin-left:10px;margin-top:0px;line-height:20px;"><strong style="color:blue;">About</strong>
 			<ul style="list-style:none;margin-left:-20px;margin-top:0px;">
 				<li><a href='https://github.com/ZhibingXie'>Github link</a></li>
-				<li><a href='http://www.linkedin.com/pub/zhibing-xie/45/555/b28'>Linkedin link</a></li>
+				<li><a href='http://ca.linkedin.com/in/zhibingxie'>Linkedin link</a></li>
 			</ul>
 		</div>
 		<hr/>
