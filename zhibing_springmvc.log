@@ -460,3 +460,137 @@
 [INFO][2014-07-07 15:38:28,453][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@153f67e: startup date [Mon Jul 07 15:38:23 EDT 2014]; root of context hierarchy
 [INFO][2014-07-07 15:38:28,453][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ad6b4b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
 [INFO][2014-07-07 15:38:28,484][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:56:29,515][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:56:29,953][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:56:30,062][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 15:56:30 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:56:30,328][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:56:30,406][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ad6b4b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:56:30,843][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:56:31,468][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:56:31,484][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:56:31,484][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:56:31,484][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:56:32,187][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:56:32,203][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:56:32,203][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:56:32,203][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:56:32,500][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:56:32,593][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:56:33,093][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:56:33,093][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:56:33,125][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:56:33,218][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 15:56:33,218][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 15:56:33,218][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 15:56:33,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 15:56:33,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 15:56:33,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 15:56:33,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 15:56:33,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 15:56:33,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 15:56:33,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 15:56:33,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 15:56:33,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 15:56:33,562][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:56:33,671][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:56:30",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:19499046, ConnectTime:"2014-07-07 15:56:32", UseCount:2, LastActiveTime:"2014-07-07 15:56:33"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:56:33,968][rml.service.impl.LogServiceImpl]Mon Jul 07 15:56:33 EDT 2014 around
+[INFO][2014-07-07 15:56:33,968][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 15:56:34,390][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 15:56:30 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:56:34,390][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ad6b4b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:56:34,406][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 16:02:31,515][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 16:02:31,953][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 16:02:32,046][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 16:02:32 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 16:02:32,296][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 16:02:32,390][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@136a1a1: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 16:02:32,843][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 16:02:33,468][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 16:02:33,484][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 16:02:33,484][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 16:02:33,500][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 16:02:34,187][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 16:02:34,187][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 16:02:34,203][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 16:02:34,203][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 16:02:34,500][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 16:02:34,593][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 16:02:35,109][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 16:02:35,109][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 16:02:35,125][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 16:02:35,218][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 16:02:35,218][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 16:02:35,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 16:02:35,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 16:02:35,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 16:02:35,234][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 16:02:35,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 16:02:35,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 16:02:35,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 16:02:35,250][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 16:02:35,265][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QAUTH
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QDOC
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QEQUIP
+[INFO][2014-07-07 16:02:35,281][java.sql.DatabaseMetaData]HHH000262: Table not found: QLOG
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QMENU
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QONLINE
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLE
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QROLETAUTH
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSER
+[INFO][2014-07-07 16:02:35,296][java.sql.DatabaseMetaData]HHH000262: Table not found: QUSERTROLE
+[INFO][2014-07-07 16:02:35,593][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 16:02:35,703][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 16:02:32",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:21497915, ConnectTime:"2014-07-07 16:02:34", UseCount:2, LastActiveTime:"2014-07-07 16:02:35"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 16:02:36,000][rml.service.impl.LogServiceImpl]Mon Jul 07 16:02:36 EDT 2014 around
+[INFO][2014-07-07 16:02:36,000][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 16:02:36,421][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 16:02:32 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 16:02:36,421][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@136a1a1: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 16:02:36,437][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
