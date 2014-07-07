@@ -1,0 +1,462 @@
+[INFO][2014-07-07 15:31:19,281][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:31:20,125][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:31:20,265][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@1f66cff: startup date [Mon Jul 07 15:31:20 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:31:20,765][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:31:20,984][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18aab40: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:31:22,062][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:31:23,046][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:31:23,062][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:31:23,078][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:31:23,078][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:31:24,078][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:31:24,078][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:31:24,093][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:31:24,093][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:31:24,546][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:31:24,562][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:31:25,312][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:31:25,312][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:31:25,375][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:31:31,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:31:31,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:31:31,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:31:31,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:31:31,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:31:31,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:31:31,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:31,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:31:31,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:31:31,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:31:31,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:31,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:31:32,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:31:32,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:31:32,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:32,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:31:32,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:31:32,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:31:32,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:31:32,593][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:31:32,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:31:32,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:31:32,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:32,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:31:33,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:31:33,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:31:33,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:33,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:31:33,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:31:33,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:31:33,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:31:33,609][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:31:33,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:31:33,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:31:33,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:31:33,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:31:34,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:31:34,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:31:34,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:31:34,265][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:31:34,265][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:31:34,437][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:31:21",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:24458678, ConnectTime:"2014-07-07 15:31:23", UseCount:2, LastActiveTime:"2014-07-07 15:31:34"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:31:34,859][rml.service.impl.LogServiceImpl]Mon Jul 07 15:31:34 EDT 2014 around
+[INFO][2014-07-07 15:31:34,859][rml.service.impl.LogServiceImpl]save
+[INFO][2014-07-07 15:31:34,937][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@1f66cff: startup date [Mon Jul 07 15:31:20 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:31:34,937][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18aab40: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:31:34,968][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:32:08,093][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:32:08,531][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:32:08,625][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@156b6b9: startup date [Mon Jul 07 15:32:08 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:32:08,890][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:32:08,968][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:32:09,406][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:32:10,046][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:32:10,062][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:32:10,062][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:32:10,062][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:32:10,718][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:32:10,734][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:32:10,734][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:32:10,734][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:32:11,031][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:32:11,046][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:32:11,640][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:32:11,640][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:32:11,656][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:32:11,828][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:32:11,828][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:32:11,828][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:32:11,828][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:32:11,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:32:11,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:32:11,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:11,859][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:32:11,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:32:11,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:32:11,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:11,875][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:32:11,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:32:11,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:32:11,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:11,906][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:32:11,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:32:11,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:32:11,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:32:11,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:32:11,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:32:11,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:32:11,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:11,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:32:11,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:32:11,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:32:11,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:11,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:32:12,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:32:12,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:32:12,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:32:12,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:32:12,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:32:12,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:32:12,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:32:12,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:32:12,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:32:12,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:32:12,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:32:12,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:32:12,062][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:32:12,187][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:32:09",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:9171948, ConnectTime:"2014-07-07 15:32:10", UseCount:2, LastActiveTime:"2014-07-07 15:32:12"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:32:12,468][rml.service.impl.LogServiceImpl]Mon Jul 07 15:32:12 EDT 2014 around
+[INFO][2014-07-07 15:32:12,468][rml.service.impl.LogServiceImpl]save
+[INFO][2014-07-07 15:32:12,500][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@156b6b9: startup date [Mon Jul 07 15:32:08 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:32:12,500][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:32:12,515][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:33:42,843][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:33:43,296][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:33:43,390][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@c62c8: startup date [Mon Jul 07 15:33:43 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:33:43,640][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:33:43,718][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:33:44,250][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:33:44,890][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:33:44,906][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:33:44,906][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:33:44,906][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:33:45,562][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:33:45,578][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:33:45,593][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:33:45,593][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:33:45,875][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:33:45,875][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:33:46,468][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:33:46,468][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:33:46,484][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:33:46,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:33:46,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:33:46,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:33:46,625][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:33:46,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:33:46,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:33:46,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,656][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:33:46,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:33:46,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:33:46,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,671][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:33:46,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:33:46,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:33:46,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,703][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:33:46,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:33:46,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:33:46,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:33:46,734][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:33:46,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:33:46,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:33:46,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,750][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:33:46,781][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:33:46,781][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:33:46,781][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,781][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:33:46,812][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:33:46,812][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:33:46,812][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:33:46,812][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:33:46,921][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:33:46,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:33:46,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:33:46,937][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:33:46,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:33:46,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:33:46,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:33:46,984][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:33:46,984][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:33:47,093][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:33:43",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:3880791, ConnectTime:"2014-07-07 15:33:45", UseCount:2, LastActiveTime:"2014-07-07 15:33:46"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:33:47,375][rml.service.impl.LogServiceImpl]Mon Jul 07 15:33:47 EDT 2014 around
+[INFO][2014-07-07 15:33:47,390][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 15:33:48,046][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@c62c8: startup date [Mon Jul 07 15:33:43 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:33:48,046][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:33:48,062][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:34:56,296][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:34:56,734][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:34:56,843][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@12940b3: startup date [Mon Jul 07 15:34:56 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:34:57,093][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:34:57,171][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:34:57,625][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:34:58,265][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:34:58,281][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:34:58,281][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:34:58,281][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:34:58,953][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:34:58,953][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:34:58,984][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:34:58,984][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:34:59,265][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:34:59,281][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:34:59,875][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:34:59,875][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:34:59,890][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:35:00,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:35:00,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:35:00,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:35:00,015][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:35:00,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:35:00,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:35:00,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,062][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:35:00,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:35:00,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:35:00,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,093][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:35:00,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:35:00,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:35:00,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,125][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:35:00,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:35:00,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:35:00,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:35:00,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:35:00,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:35:00,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:35:00,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,171][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:35:00,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:35:00,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:35:00,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,203][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:35:00,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:35:00,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:35:00,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:35:00,218][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:35:00,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:35:00,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:35:00,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:00,250][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:35:00,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:35:00,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:35:00,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:35:00,281][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:35:00,281][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:35:00,406][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:34:57",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:9171948, ConnectTime:"2014-07-07 15:34:58", UseCount:2, LastActiveTime:"2014-07-07 15:35:00"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:35:00,687][rml.service.impl.LogServiceImpl]Mon Jul 07 15:35:00 EDT 2014 around
+[INFO][2014-07-07 15:35:00,687][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 15:35:01,171][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@12940b3: startup date [Mon Jul 07 15:34:56 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:35:01,187][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1712651: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:35:01,203][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:35:22,187][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:35:22,609][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:35:22,718][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 15:35:22 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:35:22,984][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:35:23,062][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@136a1a1: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:35:23,515][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:35:24,156][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:35:24,156][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:35:24,171][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:35:24,187][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:35:24,875][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:35:24,890][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:35:24,890][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:35:24,890][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:35:25,187][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:35:25,312][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:35:25,812][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:35:25,812][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:35:25,828][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:35:25,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:35:25,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:35:25,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:35:25,953][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:35:26,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:35:26,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:35:26,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,000][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:35:26,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:35:26,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:35:26,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,031][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:35:26,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:35:26,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:35:26,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,046][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:35:26,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:35:26,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:35:26,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:35:26,078][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:35:26,109][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:35:26,109][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:35:26,109][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,109][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:35:26,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:35:26,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:35:26,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,140][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:35:26,156][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:35:26,156][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:35:26,156][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:35:26,156][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:35:26,187][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:35:26,187][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:35:26,187][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:35:26,187][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:35:26,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:35:26,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:35:26,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:35:26,234][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:35:26,234][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:35:26,343][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:35:23",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:6208201, ConnectTime:"2014-07-07 15:35:24", UseCount:2, LastActiveTime:"2014-07-07 15:35:26"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:35:26,625][rml.service.impl.LogServiceImpl]Mon Jul 07 15:35:26 EDT 2014 around
+[INFO][2014-07-07 15:35:26,625][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 15:35:27,109][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@15bdc50: startup date [Mon Jul 07 15:35:22 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:35:27,109][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@136a1a1: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:35:27,109][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
+[INFO][2014-07-07 15:38:23,187][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring.xml]
+[INFO][2014-07-07 15:38:23,640][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [spring-hibernate.xml]
+[INFO][2014-07-07 15:38:23,781][org.springframework.context.support.GenericApplicationContext]Refreshing org.springframework.context.support.GenericApplicationContext@153f67e: startup date [Mon Jul 07 15:38:23 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:38:24,125][org.springframework.beans.factory.config.PropertyPlaceholderConfigurer]Loading properties file from class path resource [config.properties]
+[INFO][2014-07-07 15:38:24,218][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ad6b4b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:38:24,687][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[INFO][2014-07-07 15:38:25,328][org.hibernate.annotations.common.Version]HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+[INFO][2014-07-07 15:38:25,343][org.hibernate.Version]HHH000412: Hibernate Core {4.2.11.Final}
+[INFO][2014-07-07 15:38:25,343][org.hibernate.cfg.Environment]HHH000206: hibernate.properties not found
+[INFO][2014-07-07 15:38:25,343][org.hibernate.cfg.Environment]HHH000021: Bytecode provider name : javassist
+[INFO][2014-07-07 15:38:26,062][org.hibernate.dialect.Dialect]HHH000400: Using dialect: org.hibernate.dialect.OracleDialect
+[WARN][2014-07-07 15:38:26,078][org.hibernate.dialect.Oracle9Dialect]HHH000063: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+[WARN][2014-07-07 15:38:26,078][org.hibernate.dialect.OracleDialect]HHH000064: The OracleDialect dialect has been deprecated; use Oracle8iDialect instead
+[INFO][2014-07-07 15:38:26,078][org.hibernate.engine.jdbc.internal.LobCreatorBuilder]HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+[INFO][2014-07-07 15:38:26,406][org.hibernate.engine.transaction.internal.TransactionFactoryInitiator]HHH000399: Using default transaction strategy (direct JDBC transactions)
+[INFO][2014-07-07 15:38:26,515][org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory]HHH000397: Using ASTQueryTranslatorFactory
+[INFO][2014-07-07 15:38:27,125][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000228: Running hbm2ddl schema update
+[INFO][2014-07-07 15:38:27,125][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000102: Fetching database metadata
+[INFO][2014-07-07 15:38:27,156][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000396: Updating schema
+[INFO][2014-07-07 15:38:27,296][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QAUTH
+[INFO][2014-07-07 15:38:27,296][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:38:27,296][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_2ikqcyapu3d8r3xd2q5ca95v9]
+[INFO][2014-07-07 15:38:27,296][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006265]
+[INFO][2014-07-07 15:38:27,328][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QDOC
+[INFO][2014-07-07 15:38:27,328][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cmanual, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:38:27,328][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,328][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006268]
+[INFO][2014-07-07 15:38:27,359][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QEQUIP
+[INFO][2014-07-07 15:38:27,359][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cno, cproducer, cid, cname, cmodel]
+[INFO][2014-07-07 15:38:27,359][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,359][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006271]
+[INFO][2014-07-07 15:38:27,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QLOG
+[INFO][2014-07-07 15:38:27,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cmsg, cip]
+[INFO][2014-07-07 15:38:27,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,390][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006275]
+[INFO][2014-07-07 15:38:27,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QMENU
+[INFO][2014-07-07 15:38:27,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [ciconcls, cseq, curl, cpid, cid, cname]
+[INFO][2014-07-07 15:38:27,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_rlvxdf66dulyosuxitxu25hwn]
+[INFO][2014-07-07 15:38:27,421][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006278]
+[INFO][2014-07-07 15:38:27,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QONLINE
+[INFO][2014-07-07 15:38:27,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdatetime, cid, cname, cip]
+[INFO][2014-07-07 15:38:27,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,437][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006283]
+[INFO][2014-07-07 15:38:27,468][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLE
+[INFO][2014-07-07 15:38:27,468][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cdesc, cid, cname]
+[INFO][2014-07-07 15:38:27,468][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,468][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006286]
+[INFO][2014-07-07 15:38:27,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QROLETAUTH
+[INFO][2014-07-07 15:38:27,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cauthid, cid]
+[INFO][2014-07-07 15:38:27,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_asiguwhc7akp78turahd6h7ub, fk_nyrc51v4v1e3yu7j2npkotebg]
+[INFO][2014-07-07 15:38:27,500][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006288]
+[INFO][2014-07-07 15:38:27,515][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSER
+[INFO][2014-07-07 15:38:27,515][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [cpwd, cmodifydatetime, ccreatedatetime, cid, cname]
+[INFO][2014-07-07 15:38:27,515][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: []
+[INFO][2014-07-07 15:38:27,531][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [uk_6h6whqeps44cod2xl4v2qa168, sys_c006292]
+[INFO][2014-07-07 15:38:27,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000261: Table found: SCOTT.QUSERTROLE
+[INFO][2014-07-07 15:38:27,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000037: Columns: [croleid, cid, cuserid]
+[INFO][2014-07-07 15:38:27,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000108: Foreign keys: [fk_if28y8fu0frhk0nijcens71jh, fk_b8m10kptakpp5gmx2pyfcdpf5]
+[INFO][2014-07-07 15:38:27,546][org.hibernate.tool.hbm2ddl.TableMetadata]HHH000126: Indexes: [sys_c006294]
+[INFO][2014-07-07 15:38:27,546][org.hibernate.tool.hbm2ddl.SchemaUpdate]HHH000232: Schema update complete
+[INFO][2014-07-07 15:38:27,671][org.springframework.orm.hibernate4.HibernateTransactionManager]Using DataSource [{
+	CreateTime:"2014-07-07 15:38:24",
+	ActiveCount:0,
+	PoolingCount:1,
+	CreateCount:1,
+	DestroyCount:0,
+	CloseCount:2,
+	ConnectCount:2,
+	Connections:[
+		{ID:6208201, ConnectTime:"2014-07-07 15:38:25", UseCount:2, LastActiveTime:"2014-07-07 15:38:27"}
+	]
+}] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2014-07-07 15:38:27,968][rml.service.impl.LogServiceImpl]Mon Jul 07 15:38:27 EDT 2014 around
+[INFO][2014-07-07 15:38:27,968][rml.service.impl.LogServiceImpl]datagrid
+[INFO][2014-07-07 15:38:28,453][org.springframework.context.support.GenericApplicationContext]Closing org.springframework.context.support.GenericApplicationContext@153f67e: startup date [Mon Jul 07 15:38:23 EDT 2014]; root of context hierarchy
+[INFO][2014-07-07 15:38:28,453][org.springframework.beans.factory.support.DefaultListableBeanFactory]Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1ad6b4b: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseDao,authService,docService,equipService,logService,menuService,onlineService,repairService,roleService,userService,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,dataSource,sessionFactory,transactionManager,transactionAdvice,transactionPointcut,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO][2014-07-07 15:38:28,484][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} closed
