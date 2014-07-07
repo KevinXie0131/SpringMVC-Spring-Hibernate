@@ -57,13 +57,20 @@
 				<!-- exclude urls -->
 				<property name="excludeUrls">
 					<list>
-						<value>/userController/reg</value>
-						<value>/userController/login</value>
-						<value>/userController/loginCombobox</value>
-						<value>/userController/loginCombogrid</value>
-						<value>/userController/logout</value>
-						<value>/roleController/tree</value>
-						<value>/roleController/allTree</value>
+						<value>/authController/doNotNeedSession_tree</value>
+						<value>/authController/doNotNeedSession_treeRecursive</value>
+						<value>/menuController/doNotNeedSession_tree</value>
+						<value>/menuController/doNotNeedSession_treeRecursive</value>
+						<value>/onlineController/doNotNeedSession_onlineDatagrid</value>
+						<value>/repairController/doNotNeedSession_onlineDatagrid</value>
+						<value>/repairController/doNotNeedSession_deleteAndRepair</value>
+						<value>/roleController/doNotNeedSession_combobox</value>
+					
+						<value>/userController/doNotNeedSession_login</value>
+						<value>/userController/doNotNeedSession_reg</value>
+						<value>/userController/doNotNeedSession_logout</value>
+						<value>/userController/doNotNeedSession_combobox</value>
+						<value>/userController/doNotNeedSession_datagrid</value>
 					</list>
 				</property>
 			</bean>
