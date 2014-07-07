@@ -1,0 +1,34 @@
+.tableForm {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tableForm th {
+	text-align: right;
+	border: 1px solid #ccc;
+}
+
+.tableForm td {
+	text-align: left;
+	border: 1px solid #ccc;
+}
+
+.tableForm input {
+	width: 96%;
+}
+
+.tableForm textarea {
+	width: 96%;
+}
+
+.info {
+	background: #FFFEE6;
+	color: #8F5700;
+	padding: 12px;
+}
+
+.tip {
+	width: 24px;
+	height: 16px;
+	float: left;
+}
