@@ -271,7 +271,7 @@ public class RepairServiceImpl implements RepairServiceI {
 		Tauth auth1_1 = new Tauth();
 		auth1_1.setCid("auth1_1");
 		auth1_1.setTauth(auth1);
-		auth1_1.setCname("Equipment");
+		auth1_1.setCname("datagrid");
 		auth1_1.setCurl("/equipController/datagrid");
 		auth1_1.setCseq(BigDecimal.valueOf(1));
 		auth1_1.setCdesc("Equipment management");
@@ -280,29 +280,146 @@ public class RepairServiceImpl implements RepairServiceI {
 		Tauth auth1_2 = new Tauth();
 		auth1_2.setCid("auth1_2");
 		auth1_2.setTauth(auth1);
-		auth1_2.setCname("Equipment");
+		auth1_2.setCname("equip");
 		auth1_2.setCurl("/equipController/equip");
 		auth1_2.setCseq(BigDecimal.valueOf(2));
-		auth1_2.setCdesc("Equipment management");
+		auth1_2.setCdesc("");
 		authDao.saveOrUpdate(auth1_2);
 		
 		Tauth auth1_3 = new Tauth();
 		auth1_3.setCid("auth1_3");
 		auth1_3.setTauth(auth1);
-		auth1_3.setCname("Document");
-		auth1_3.setCurl("/docController/datagrid");
+		auth1_3.setCname("equipAdd");
+		auth1_3.setCurl("/equipController/equipAdd");
 		auth1_3.setCseq(BigDecimal.valueOf(3));
-		auth1_3.setCdesc("Document management");
+		auth1_3.setCdesc("");
 		authDao.saveOrUpdate(auth1_3);
 		
 		Tauth auth1_4 = new Tauth();
 		auth1_4.setCid("auth1_4");
 		auth1_4.setTauth(auth1);
-		auth1_4.setCname("Document");
-		auth1_4.setCurl("/docController/doc");
+		auth1_4.setCname("equipEdit");
+		auth1_4.setCurl("/equipController/equipEdit");
 		auth1_4.setCseq(BigDecimal.valueOf(4));
-		auth1_4.setCdesc("Document management");
+		auth1_4.setCdesc("");
 		authDao.saveOrUpdate(auth1_4);
+		
+		Tauth auth1_5 = new Tauth();
+		auth1_5.setCid("auth1_5");
+		auth1_5.setTauth(auth1);
+		auth1_5.setCname("add");
+		auth1_5.setCurl("/equipController/add");
+		auth1_5.setCseq(BigDecimal.valueOf(5));
+		auth1_5.setCdesc("");
+		authDao.saveOrUpdate(auth1_5);
+		
+		Tauth auth1_6 = new Tauth();
+		auth1_6.setCid("auth1_6");
+		auth1_6.setTauth(auth1);
+		auth1_6.setCname("edit");
+		auth1_6.setCurl("/equipController/edit");
+		auth1_6.setCseq(BigDecimal.valueOf(6));
+		auth1_6.setCdesc("");
+		authDao.saveOrUpdate(auth1_6);
+		
+		Tauth auth1_7 = new Tauth();
+		auth1_7.setCid("auth1_7");
+		auth1_7.setTauth(auth1);
+		auth1_7.setCname("delete");
+		auth1_7.setCurl("/equipController/delete");
+		auth1_7.setCseq(BigDecimal.valueOf(7));
+		auth1_7.setCdesc("");
+		authDao.saveOrUpdate(auth1_7);
+		
+		Tauth auth1_8 = new Tauth();
+		auth1_8.setCid("auth1_8");
+		auth1_8.setTauth(auth1);
+		auth1_8.setCname("exportToExcel");
+		auth1_8.setCurl("/equipController/exportToExcel");
+		auth1_8.setCseq(BigDecimal.valueOf(8));
+		auth1_8.setCdesc("");
+		authDao.saveOrUpdate(auth1_8);
+		
+		Tauth auth1_9 = new Tauth();
+		auth1_9.setCid("auth1_9");
+		auth1_9.setTauth(auth1);
+		auth1_9.setCname("datagrid");
+		auth1_9.setCurl("/docController/datagrid");
+		auth1_9.setCseq(BigDecimal.valueOf(9));
+		auth1_9.setCdesc("Document management");
+		authDao.saveOrUpdate(auth1_9);
+		
+		Tauth auth1_10 = new Tauth();
+		auth1_10.setCid("auth1_10");
+		auth1_10.setTauth(auth1);
+		auth1_10.setCname("doc");
+		auth1_10.setCurl("/docController/doc");
+		auth1_10.setCseq(BigDecimal.valueOf(10));
+		auth1_10.setCdesc("");
+		authDao.saveOrUpdate(auth1_10);
+
+		Tauth auth1_11 = new Tauth();
+		auth1_11.setCid("auth1_11");
+		auth1_11.setTauth(auth1);
+		auth1_11.setCname("docAdd");
+		auth1_11.setCurl("/docController/docAdd");
+		auth1_11.setCseq(BigDecimal.valueOf(11));
+		auth1_11.setCdesc("");
+		authDao.saveOrUpdate(auth1_11);
+		
+		Tauth auth1_12 = new Tauth();
+		auth1_12.setCid("auth1_12");
+		auth1_12.setTauth(auth1);
+		auth1_12.setCname("docEdit");
+		auth1_12.setCurl("/docController/docEdit");
+		auth1_12.setCseq(BigDecimal.valueOf(12));
+		auth1_12.setCdesc("");
+		authDao.saveOrUpdate(auth1_12);
+		
+		Tauth auth1_13 = new Tauth();
+		auth1_13.setCid("auth1_13");
+		auth1_13.setTauth(auth1);
+		auth1_13.setCname("docUpload");
+		auth1_13.setCurl("/docController/docUpload");
+		auth1_13.setCseq(BigDecimal.valueOf(13));
+		auth1_13.setCdesc("");
+		authDao.saveOrUpdate(auth1_13);
+		
+		Tauth auth1_14 = new Tauth();
+		auth1_14.setCid("auth1_14");
+		auth1_14.setTauth(auth1);
+		auth1_14.setCname("add");
+		auth1_14.setCurl("/docController/add");
+		auth1_14.setCseq(BigDecimal.valueOf(14));
+		auth1_14.setCdesc("");
+		authDao.saveOrUpdate(auth1_14);
+		
+		Tauth auth1_15 = new Tauth();
+		auth1_15.setCid("auth1_15");
+		auth1_15.setTauth(auth1);
+		auth1_15.setCname("edit");
+		auth1_15.setCurl("/docController/edit");
+		auth1_15.setCseq(BigDecimal.valueOf(15));
+		auth1_15.setCdesc("");
+		authDao.saveOrUpdate(auth1_15);
+		
+		Tauth auth1_16 = new Tauth();
+		auth1_16.setCid("auth1_16");
+		auth1_16.setTauth(auth1);
+		auth1_16.setCname("delete");
+		auth1_16.setCurl("/docController/delete");
+		auth1_16.setCseq(BigDecimal.valueOf(16));
+		auth1_16.setCdesc("");
+		authDao.saveOrUpdate(auth1_16);
+		
+		Tauth auth1_17 = new Tauth();
+		auth1_17.setCid("auth1_17");
+		auth1_17.setTauth(auth1);
+		auth1_17.setCname("upload");
+		auth1_17.setCurl("/docController/upload");
+		auth1_17.setCseq(BigDecimal.valueOf(17));
+		auth1_17.setCdesc("");
+		authDao.saveOrUpdate(auth1_17);	
 		//
 		Tauth auth2 = new Tauth();
 		auth2.setCid("auth2");
@@ -393,6 +510,33 @@ public class RepairServiceImpl implements RepairServiceI {
 		auth2_9.setCseq(BigDecimal.valueOf(9));
 		auth2_9.setCdesc("Batch edit role");
 		authDao.saveOrUpdate(auth2_9);
+		
+		Tauth auth2_10 = new Tauth();
+		auth2_10.setCid("auth2_10");
+		auth2_10.setTauth(auth2);
+		auth2_10.setCname("chart");
+		auth2_10.setCurl("/userController/chart");
+		auth2_10.setCseq(BigDecimal.valueOf(10));
+		auth2_10.setCdesc("");
+		authDao.saveOrUpdate(auth2_10);
+		
+		Tauth auth2_11 = new Tauth(); ///////////
+		auth2_11.setCid("auth2_11");
+		auth2_11.setTauth(auth2);
+		auth2_11.setCname("datagrid");
+		auth2_11.setCurl("/logController/datagrid");
+		auth2_11.setCseq(BigDecimal.valueOf(11));
+		auth2_11.setCdesc("");
+		authDao.saveOrUpdate(auth2_11);
+		
+		Tauth auth2_12 = new Tauth();
+		auth2_12.setCid("auth2_12");
+		auth2_12.setTauth(auth2);
+		auth2_12.setCname("log");
+		auth2_12.setCurl("/logController/log");
+		auth2_12.setCseq(BigDecimal.valueOf(12));
+		auth2_12.setCdesc("");
+		authDao.saveOrUpdate(auth2_12);
 		//
 		Tauth auth3 = new Tauth();
 		auth3.setCid("auth3");
@@ -496,7 +640,7 @@ public class RepairServiceImpl implements RepairServiceI {
 		Tauth auth4_3 = new Tauth();
 		auth4_3.setCid("auth4_3");
 		auth4_3.setTauth(auth4);
-		auth4_3.setCname("Add role");
+		auth4_3.setCname("Add auth");
 		auth4_3.setCurl("/authController/authAdd");
 		auth4_3.setCseq(BigDecimal.valueOf(3));
 		auth4_3.setCdesc("");
@@ -591,6 +735,7 @@ public class RepairServiceImpl implements RepairServiceI {
 				roleauthDao.save(roleauth);
 			}
 		}
+	
 	}
 	
 	private void repairUserRole() {
