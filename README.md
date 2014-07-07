@@ -1,4 +1,4 @@
-SpringMVC+Spring+Hibernate
+﻿SpringMVC+Spring+Hibernate
 ===============
 
 Frameworks and Tools
@@ -16,7 +16,7 @@ System Features
 -----------------------------------
 * Migrate the application of Struts2.3+Spring3+Hibernate4 from Struts2 to SpringMVC 
 * Convert database connection pool from C3P0 to Druid
-
+*
 * Management of user, role, authority, equipment and document
 * Export equipment list to Excel file using POI
 * Chart display of user statistics using JFreeChart
