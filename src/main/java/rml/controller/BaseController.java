@@ -22,6 +22,7 @@ import com.alibaba.fastjson.JSON;
 import rml.util.StringEscapeEditor;
 
 @Controller
+@RequestMapping("/baseController")
 public class BaseController {
 
 	@InitBinder
