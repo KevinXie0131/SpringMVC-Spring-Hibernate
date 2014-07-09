@@ -35,20 +35,18 @@
 		  p:prefix="/" p:suffix=".jsp" />
 
 	<!-- file upload -->
-	<!-- 
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="defaultEncoding"> 
 	 		<value>UTF-8</value> 
 	 	</property> 
 	 	<property name="maxUploadSize"> 
-	 		<value>32505856</value> 
+	 		<value>104857600</value> 
 	 	</property> 
 	 	<property name="maxInMemorySize"> 
 	 		<value>4096</value> 
 	 	</property>
-	 </bean> 
-	 -->
-
+	</bean> 
+	
 	<!-- interceptor -->
 	<mvc:interceptors>
 		<mvc:interceptor>

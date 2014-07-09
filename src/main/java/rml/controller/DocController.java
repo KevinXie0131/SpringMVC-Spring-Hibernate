@@ -1,7 +1,9 @@
 package rml.controller;
 
 import java.io.File;
+import java.util.Date;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.io.FileUtils;
@@ -9,9 +11,13 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.ServletContextAware;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
+import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import rml.model.vo.DataGrid;
 import rml.model.vo.Doc;
@@ -21,39 +27,18 @@ import rml.util.ExceptionUtil;
 
 @Controller
 @RequestMapping("/docController")
-public class DocController extends BaseController{
+public class DocController extends BaseController implements ServletContextAware{
 
 	private static final Logger logger = Logger.getLogger(DocController.class);
 	
 	@Autowired
 	private DocServiceI docService;
 	
-	private File uploadFile;  
-	private String uploadFileFileName; 
-	private String uploadFileContentType;  
+	private ServletContext servletContext;
 	
-	public File getUploadFile() {
-		return uploadFile;
-	}
-
-	public void setUploadFile(File uploadFile) {
-		this.uploadFile = uploadFile;
-	}
-
-	public String getUploadFileFileName() {
-		return uploadFileFileName;
-	}
-
-	public void setUploadFileFileName(String uploadFileFileName) {
-		this.uploadFileFileName = uploadFileFileName;
-	}
-
-	public String getUploadFileContentType() {
-		return uploadFileContentType;
-	}
-
-	public void setUploadFileContentType(String uploadFileContentType) {
-		this.uploadFileContentType = uploadFileContentType;
+	@Override
+	public void setServletContext(ServletContext context) {
+		this.servletContext  = context;
 	}
 	
 	@RequestMapping("/doc")
@@ -127,32 +112,32 @@ public class DocController extends BaseController{
 		return docService.datagrid(doc);
 	}
 		
-    @RequestMapping("/upload")
+	@RequestMapping(value="/upload", method = RequestMethod.POST)
 	@ResponseBody
-	public Json upload(Doc doc) {
+	public Json upload(Doc doc, @RequestParam("uploadFile") CommonsMultipartFile file) {
 		Json j = new Json();
-		try {			
-			String uploadFileFileNameWithoutSpace = uploadFileFileName.replaceAll(" ", "");
-			//String realpath = ServletActionContext.getServletContext().getRealPath("/upload");
-			HttpServletRequest request = ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();    
-			String realpath = request.getSession().getServletContext().getRealPath("/upload");  
-			
+		
+		try {
+			String realpath = this.servletContext.getRealPath("/upload");			
+			String uploadFileFileName = file.getOriginalFilename();			
+			String uploadFileFileNameWithoutSpace = uploadFileFileName.replaceAll(" ", "");		
+			String fileType = uploadFileFileNameWithoutSpace.substring(uploadFileFileNameWithoutSpace.lastIndexOf("."));
 			
 			File targetFile = new File(realpath+File.separator, uploadFileFileNameWithoutSpace);
 			if (targetFile.exists()) {
 				targetFile.delete();
 			}
-			FileUtils.copyFile(uploadFile, targetFile);
-			
+			file.getFileItem().write(targetFile);		
 			docService.upload(doc,uploadFileFileNameWithoutSpace);
 			
 			j.setSuccess(true);
 			j.setMsg("Upload manual successfully");
+			
 		}catch (Exception e) {
 			logger.error(ExceptionUtil.getExceptionMessage(e));
 			j.setMsg("Upload manual unsuccessfully");
 		}
+		
 		return j;
 	}
-    
 }

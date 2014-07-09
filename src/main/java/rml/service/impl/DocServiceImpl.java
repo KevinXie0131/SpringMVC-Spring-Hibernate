@@ -38,6 +38,7 @@ public class DocServiceImpl implements DocServiceI{
 
 	@Override
 	public void update(Doc doc) {
+				
 		Tdoc d = docDao.get(Tdoc.class, doc.getCid());
 		BeanUtils.copyProperties(doc, d, new String[]{"cmanual"});
 	}
@@ -58,7 +59,7 @@ public class DocServiceImpl implements DocServiceI{
 	public void upload(Doc doc, String fileName) {
 		
 		Tdoc d = docDao.get(Tdoc.class, doc.getCid());
-		String manualUrl = "<a href='upload/" + fileName + "'>" + fileName + "</a>";
+		String manualUrl = "<a href='../upload/" + fileName + "'>" + fileName + "</a>";
 		d.setCmanual(manualUrl);
 	}	
 	
