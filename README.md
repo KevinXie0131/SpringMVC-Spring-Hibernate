@@ -22,10 +22,6 @@ System Features
 * User access logs based on Spring AOP
 * Cross-browser compatibility of Chrome/Firefox/IE
 
-Demo Link
------------------------------------
-[SrpingMVC-Spring-Hibernate](http://141.117.68.121/zhibing_springmvc)
-
 About
 -----------------------------------
 * [Github link](https://github.com/ZhibingXie)
