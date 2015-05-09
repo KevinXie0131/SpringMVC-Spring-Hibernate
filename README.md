@@ -30,10 +30,3 @@ About
 -----------------------------------
 * [Github link](https://github.com/ZhibingXie)
 * [Linkedin link](http://www.linkedin.com/in/zhibingxie)
-    
-Contact
------------------------------------
-* Zhibing Xie
-* Addrss: Downtown, Toronto, Ontario, Canada
-* Email: zhibing.x@gmail.com
-* Tel: (647) 974-7603
